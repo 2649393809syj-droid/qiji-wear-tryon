@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>奇纪营销</title>
+</head>
+<body>
+<!-- top -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #169BD5;">
+    <div class="container-fluid" style="background-color: #169BD5;">
+        <div class="logo">
+            <img src="" alt="" style="margin-top: 12px">
+        </div>
+        <div id="top_text1">
+            奇纪营销
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+
+            <form class="d-flex" role="search">
+                <div id="top_text2">
+                    欢迎您，<span id="welcome_name"></span>
+                </div>
+                <!-- <a class="button_" style="border: none;margin-top: 35px;" href="" data-bs-toggle="modal" data-bs-target="#modify_user_password">修改密码</a> -->
+                <a class="button_" style="border: none;margin-top: 35px;" href="/user/logout">退出登录</a>
+            </form>
+        </div>
+    </div>
+</nav>
+<div id="zwf" style="width: 301px;height: 880px;float: left;"></div>
+<div id="left_navs">
+    <button class="left_button" onclick="window.location.href='./promotion_search.html'">
+        <span class="left_logo"><img src="" alt=""></span>
+        推广奖励查询
+    </button>
+    <button class="left_button action" onclick="window.location.href='./delay_search.html'">
+        <span class="left_logo" style="background-color: #169BD5;"><img src="" alt=""></span>
+        延时奖励查询
+    </button>
+    <button class="left_button" onclick="window.location.href='./area_search.html'">
+        <span class="left_logo"><img src="" alt=""></span>
+        区域奖励查询
+    </button>
+    <button class="left_button" onclick="window.location.href='./team_search.html'">
+        <span class="left_logo"><img src="" alt=""></span>
+        团队奖励查询
+    </button>
+</div>
+
+<div id="zwf2" style="height: 80px"></div>
+
+
+<div class="container-fluid" style="margin-top: 20px;">
+    <div style="display: flex">
+        <div>
+            <button class="btn btn-primary" id="show_all">展开所有</button>
+            <button class="btn btn-primary" id="hide_all">隐藏所有</button>
+        </div>
+        <div style="margin-left: auto;margin-right: 20px">
+            <label>
+                <input type="text" style="height: 38px">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </label>
+        </div>
+    </div>
+    <div class="row" id="container">
+        <div id="user_msg_box">
+
+        </div>
+    </div>
+</div>
+
+<link rel="stylesheet" href="../../app/common/css/bootstrap.min.css">
+<link rel="stylesheet" href="../../app/common/css/styles.css">
+<link rel="stylesheet" href="../../css/marketing/delay_search.css">
+<script src="../../app/common/js/jquery.js"></script>
+<script src="../../app/common/js/bootstrap.bundle.min.js"></script>
+<script src="../../app/common/js/handlebars.min-v4.7.7.js"></script>
+<script src="../../app/common/common_tpl/common_tql.js"></script>
+<script src="../../js/marketing/delay_search.js"></script>
+<script src="../../app/common/js/marketing/common.js"></script>
+
+</body>
+</html>

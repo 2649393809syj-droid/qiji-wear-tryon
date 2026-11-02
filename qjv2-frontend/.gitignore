@@ -1,0 +1,40 @@
+# 开发环境依赖目录
+node_modules/
+.unpackage/
+.hbuilderx/
+.idea/
+.vscode/
+.DS_Store
+
+# 编译生成文件
+dist/
+build/
+unpackage/dist/ # uniapp 打包目录
+
+# 日志文件
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 环境变量文件
+.env.local
+.env.*.local
+
+# 缓存文件
+.cache/
+
+# 操作系统生成文件
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# 编辑器生成文件
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# uniapp 相关
+project.config.json
+project.private.config.json

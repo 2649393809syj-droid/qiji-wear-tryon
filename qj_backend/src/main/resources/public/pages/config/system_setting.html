@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>奇纪营销</title>
+</head>
+<body>
+    <!-- top -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #169BD5;">
+        <div class="container-fluid" style="background-color: #169BD5;">
+            <div class="logo">
+                <img src="" alt="" style="margin-top: 12px">
+            </div>
+            <div id="top_text1">
+                奇纪营销
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+
+                <form class="d-flex" role="search">
+                    <div id="top_text2">
+                        欢迎您，<span id="welcome_name"></span>
+                    </div>
+                    <!-- <a class="button_" style="border: none;margin-top: 35px;" href="" data-bs-toggle="modal" data-bs-target="#modify_user_password">修改密码</a> -->
+                    <a class="button_" style="border: none;margin-top: 35px;" href="/user/logout">退出登录</a>
+
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+    <div id="zwf" style="width: 301px;height: 880px;float: left;"></div>
+    <div id="left_navs">
+        <button class="left_button action" onclick="window.location.href='./system_setting.html'">
+            <span class="left_logo" style="background-color: #169BD5;"><img src="" alt=""></span>
+            系统设置
+        </button>
+        <button class="left_button" onclick="window.location.href='./user_setting.html'">
+            <span class="left_logo"><img src="" alt=""></span>
+            用户设置
+        </button>
+        <button class="left_button" onclick="window.location.href='./user_commission.html'">
+            <span class="left_logo"><img src="" alt=""></span>
+            ...........3
+        </button>
+        <button class="left_button" onclick="window.location.href='./user_bonus.html'">
+            <span class="left_logo"><img src="" alt=""></span>
+            ...........4
+        </button>
+    </div>
+
+    <div id="zwf2" style="height: 70px"></div>
+    <div class="container-fluid con">
+        <div class="row">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>代理身份</th>
+                    <th>权限金/时长</th>
+                    <th>权限一</th>
+                    <th>权限二</th>
+                    <th>责任一</th>
+                    <th>备注</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>创美人</td>
+                    <td>365元/年</td>
+                    <td><label>
+                        <input type="text" placeholder="1000" id="cm_authority_11">
+                        次上传
+                    </label><br><label>
+                        <input type="text" placeholder="500" id="cm_authority_12">
+                        次搭配
+                    </label></td>
+                    <td>/</td>
+                    <td>/</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>V创家</td>
+                    <td>6000元/第一年<br>365元/年</td>
+                    <td>
+                        <label>
+                            <input type="text" placeholder="1000" id="vm_authority_21">
+                            次上传
+                        </label><br><label>
+                        <input type="text" placeholder="500" id="vm_authority_22">
+                        次搭配
+                    </label>
+                    </td>
+                    <td>6000元权限金名额</td>
+                    <td>2万元直属团队权限金业绩/年</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>S创家</td>
+                    <td>3万/终身</td>
+                    <td><label>
+                        <input type="text" placeholder="1000" id="sm_authority_31">
+                        次上传
+                    </label><br>
+                        <label>
+                            <input type="text" placeholder="500" id="sm_authority_32">
+                            次搭配
+                        </label></td>
+                    <td>3万元权限金名额</td>
+                    <td>10万元直属团队权限金业绩/年</td>
+                    <td>如未达成则另行招募一名S创家</td>
+                </tr>
+                <tr>
+                    <td>C创家</td>
+                    <td>30万/终身</td>
+                    <td><label>
+                        <input type="text" placeholder="1000" id="cc_authority_41">
+                        次上传
+                    </label><br>
+                        <label>
+                            <input type="text" placeholder="500" id="cc_authority_42">
+                            次搭配
+                        </label></td>
+                    <td>30万元权限金名额</td>
+                    <td>200万元城市团队权限金业绩/年</td>
+                    <td>如未达成则另行招募一名C创家</td>
+                </tr>
+                </tbody>
+                <tfoot>
+                <tr style="border: none;">
+                    <td  colspan="10" style="border: none;">
+                        <div style="display:flex;justify-content: end">
+                            <button type="button" class="btn btn-primary" id="upload_btn">上传</button>
+                        </div>
+
+                    </td>
+
+                </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+
+    <link rel="stylesheet" href="../../app/common/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../app/common/css/styles.css">
+    <link rel="stylesheet" href="../../css/config/system_setting.css">
+    <script src="../../app/common/js/jquery.js"></script>
+    <script src="../../app/common/js/bootstrap.bundle.min.js"></script>
+    <script src="../../js/config/system_setting.js"></script>
+
+</body>
+</html>

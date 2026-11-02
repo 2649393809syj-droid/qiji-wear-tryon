@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>奇纪营销</title>
+</head>
+<body>
+    <!-- top -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #169BD5;">
+        <div class="container-fluid" style="background-color: #169BD5;">
+            <div class="logo">
+                <img src="" alt="" style="margin-top: 12px">
+            </div>
+            <div id="top_text1">
+                奇纪营销
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+
+                <form class="d-flex" role="search">
+                    <div id="top_text2">
+                        欢迎您，<span id="welcome_name"></span>
+                    </div>
+                    <!-- <a class="button_" style="border: none;margin-top: 35px;" href="" data-bs-toggle="modal" data-bs-target="#modify_user_password">修改密码</a> -->
+                    <a class="button_" style="border: none;margin-top: 35px;" href="">退出登录</a>
+
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+    <div id="zwf" style="width: 301px;height: 880px;float: left;"></div>
+    <div id="left_navs">
+        <button class="left_button" onclick="window.location.href='./system_setting.html'">
+            <span class="left_logo"><img src="" alt=""></span>
+            系统设置
+        </button>
+        <button class="left_button" onclick="window.location.href='./user_setting.html'">
+            <span class="left_logo"><img src="" alt=""></span>
+            用户设置
+        </button>
+        <button class="left_button" onclick="window.location.href='./user_commission.html'">
+            <span class="left_logo"><img src="" alt=""></span>
+            ...........3
+        </button>
+        <button class="left_button action" onclick="window.location.href='./user_bonus.html'">
+            <span class="left_logo" style="background-color: #169BD5;"><img src="" alt=""></span>
+            ...........4
+        </button>
+    </div>
+
+    <div id="zwf2" style="height: 70px"></div>
+    <div class="container-fluid con">
+        <div class="row">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>推荐人</th>
+                    <th>奖励金比例</th>
+                    <th>奖励金要求</th>
+                    <th>备注</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>S创家（3万）</td>
+                    <td>直系团队总权限金<label>
+                        <input type="text" placeholder="5">
+                    </label>%</td>
+                    <td>权限金到达或超过3万起计提</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>C创家（30万）</td>
+                    <td>直系团队总权限金<label>
+                        <input type="text" placeholder="10">
+                    </label>%</td>
+                    <td>权限金到达或超过3万起计提</td>
+                    <td></td>
+                </tr>
+                </tbody>
+                <tfoot>
+                <tr style="border: none;">
+                    <td  colspan="10" style="border: none;">
+                        <div style="display:flex;justify-content: end">
+                            <button type="button" class="btn btn-primary" id="upload_btn">上传</button>
+                        </div>
+
+                    </td>
+
+                </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+
+    <link rel="stylesheet" href="../../app/common/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../app/common/css/styles.css">
+    <link rel="stylesheet" href="../../css/config/user_bonus.css">
+    <script src="../../app/common/js/jquery.js"></script>
+    <script src="../../app/common/js/bootstrap.bundle.min.js"></script>
+    <script src="../../js/config/user_bonus.js"></script>
+</body>
+</html>

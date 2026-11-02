@@ -1,0 +1,30 @@
+img{
+    max-width: 100%;
+}
+div{
+    line-height: 2;
+    font-family: "WenQuanYi Zen Hei", "WenQuanYi Micro Hei", "Noto Sans CJK SC", "Source Han Sans CN", "Microsoft YaHei", "SimSun", sans-serif;
+}
+h2,h3{
+    font-family: "WenQuanYi Zen Hei", "WenQuanYi Micro Hei", "Noto Sans CJK SC", "Source Han Sans CN", "Microsoft YaHei", "KaiTi", "SimSun", serif;
+}
+h4{
+    margin-bottom: 0;
+    font-family: "WenQuanYi Zen Hei", "WenQuanYi Micro Hei", "Noto Sans CJK SC", "Source Han Sans CN", "Microsoft YaHei", "KaiTi", "SimSun", serif;
+}
+body{
+    font-family: "WenQuanYi Zen Hei", "WenQuanYi Micro Hei", "Noto Sans CJK SC", "Source Han Sans CN", "Microsoft YaHei", "SimSun", sans-serif;
+}
+.shapeSpan{
+    font-weight: bold;
+}
+.paragraph{
+    margin-bottom: 10px;
+    text-indent: 2em;
+}
+.shape{
+    display: flex;
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    justify-content: center
+}

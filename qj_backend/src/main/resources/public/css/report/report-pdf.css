@@ -1,0 +1,101 @@
+/* PDF专用样式 - 优化分页和布局 */
+@page {
+    size: A4;
+    margin: 10mm;
+}
+
+body {
+    font-family: "Microsoft YaHei", "SimSun", sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+/* 容器宽度控制 */
+div[style*="width: 94%"] {
+    width: 100% !important;
+    margin-left: 0 !important;
+}
+
+div[style*="margin-left: 2%"] {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+/* 图片优化 */
+img {
+    max-width: 100%;
+    height: auto;
+    page-break-inside: avoid;
+}
+
+/* 标题样式 */
+h2, h3 {
+    font-family: "Microsoft YaHei", "SimSun", sans-serif;
+    page-break-after: avoid;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+/* 段落样式 */
+.paragraph {
+    margin-bottom: 8px;
+    text-indent: 2em;
+    page-break-inside: avoid;
+}
+
+/* 形状图片容器 */
+.shape {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+    page-break-inside: avoid;
+}
+
+/* 分页控制 */
+.title {
+    page-break-before: auto;
+    page-break-after: avoid;
+}
+
+/* 避免在图片中间分页 */
+div[id*="invertedTriangle"],
+div[id*="straight"],
+div[id*="equilibrium"],
+div[id*="pear"],
+div[id*="round"],
+div[id*="hourglass"],
+div[id*="classical"],
+div[id*="elegance"],
+div[id*="nature"],
+div[id*="romance"],
+div[id*="vanguard"],
+div[id*="juvenile"],
+div[id*="girl"],
+div[id*="drama"],
+div[id*="exotic"],
+div[id*="roman"] {
+    page-break-inside: avoid;
+    page-break-after: auto;
+}
+
+/* 文本内容 */
+.text {
+    font-size: 14px;
+}
+
+/* 强调文本 */
+.shapeSpan {
+    font-weight: bold;
+}
+
+/* 确保内容不会超出页面边界 */
+* {
+    box-sizing: border-box;
+}
+
+/* 移除不必要的背景色 */
+body[style*="background-color: white"] {
+    background-color: white !important;
+} 

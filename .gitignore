@@ -1,0 +1,16 @@
+# 构建产物与日志
+target/
+logs/
+*.log
+node_modules/
+unpackage/
+
+# 环境与密钥（不入库）
+*.properties.orig
+application-prod.properties
+db.setting
+*.setting
+qjnew.sql
+.env
+.env.*
+iF0EBuF8pE.txt

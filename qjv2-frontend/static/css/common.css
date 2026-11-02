@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+text {
+  font-size: 14px;
+  text-align: center;
+  line-height: 4vh;
+  margin: 0 0.5vw;
+}
+
+.flex {
+  display: flex !important;
+  display: -moz-box !important;
+  display: -webkit-flex !important;
+  display: -moz-flex !important;
+  display: -ms-flexbox !important;
+}
+
+.pageTitle {
+  font-size: 32px;
+  font-weight: bold;
+  color: #2C405A;
+  line-height: 1.5;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%;
+}
